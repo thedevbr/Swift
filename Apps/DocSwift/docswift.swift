@@ -118,7 +118,7 @@
 
 // INTEIRO (Interger / Int)
 /*
-  São números sem componente fracionário, com por exemplo 24 e -24, podendo ser usados com sinal ( positivo, nulo ou negativo) ou sem sinal ( positivo ou zero).
+  São números sem componente fracionário, como por exemplo 24 e -24, podendo ser usados com sinal ( positivo, nulo ou negativo) ou sem sinal ( positivo ou zero).
 
   O Swift oferece inteiros assinados e não assinados em formato de 8, 16, 32  e 64 bits. esses inteiros seguem uma convenção de nomenclatura semelhante a linguagem C, em que um inteiro sem sinal de 8 bits é do tipo UInt8 e um inteiro com sinal de 32bits é do tipo UInt32. Como todos os tipos em Swift, esses tipos inteiros tem nomes em maiúsculas.
 
@@ -156,7 +156,49 @@
   Use UIntapenas quando precisar especificamente de um tipo inteiro sem sinal com o mesmo tamanho que o tamanho da palavra nativa da plataforma. Se este não for o caso, Inté preferível, mesmo quando os valores a serem armazenados são conhecidos como não negativos. Um uso consistente de Intpara valores inteiros auxilia a interoperabilidade do código, evita a necessidade de converter entre diferentes tipos de números e corresponde à inferência de tipo inteiro.
 */
 
-// Continua ...
+// NÚMEROS FLUTUANTES
+/*
+  Números flutuantes são números fracionários
+  Ex:
+  3.14159, 0.1 e -273.15.
+  Números flutuantes podem representar um intervalo muito mais amplos que números inteiros e podem armazenar números muito maiores e menores, do que um "Int". O swift oferece dois tipos para números flutuantes, são eles:
+  Double --> representa um número flutuante de 64bits.
+  Float --> representa um número flutuante de 32bits.
+
+  OBS: Double tem uma precisão de pelo menos 15 casas decimais, enquanto Float tem precisão de apenas 6 casas decimais. Pode se usar de acordo com a aplicação, porém, Double é sempre preferível.
+
+*/
+
+// SEGURANÇA DE TIPO E INTERFERÊNCIA DE TIPO
+/*
+  Swift é uma linguagem de tipo seguro. Uma linguagem do tipo segura incetiva-nos a sermos precisos sobre os tipos de valores com os quais nosso código pode trabalhar. se parte do nosso código requer uma String, não podemos passar um valor Int por engano.
+
+  Segurança de tipo --> O Swift executa verificações de tipo ao compilar o código e sinaliza quaisquer tipos incompatíveis como erros, isso permite verificarmos se a aplicação tem erros, tornando o processo de desenvolvimento melhor.
+
+  Inteferência de tipo --> Basicamente o Swift descobre o tipo de dado mais apropriado caso não tenhamos especificado. Permite que um compilador deduza o tipo de uma expressão específica automaticamente ao compilar o código, simplesmente verificando os valores definidos.
+
+  Por exemplo, se atribuirmos um valor literal de 42 a uma nova constante sem dizer qual é o tipo, o Swift infere que desejamos que a constante seja um Int, porque inicializamos com um número que parece um inteiro:
+
+  let meaningOfLife = 42
+  // meaningOfLife is inferred to be of type Int
+
+  Da mesma forma, se não especificarmos um tipo para um literal de ponto flutuante, o Swift infere que desejamos criar um Double:
+
+  let pi = 3.14159
+  // pi is inferred to be of type Double
+
+  O Swift sempre escolhe Double(em vez de Float) ao inferir o tipo de números de ponto flutuante.
+
+  Se combinarmos literais inteiros e de ponto flutuante em uma expressão, um tipo de Double será inferido a partir do contexto:
+
+  let anotherPi = 3 + 0.14159
+  // anotherPi is also inferred to be of type Double
+
+  O valor literal de 3 não tem tipo explícito em si mesmo e, portanto, um tipo de saída apropriado é o Double inferido da presença de um literal de ponto flutuante como parte da adição.
+*/
+
+
+// Literais Numéricos
 /*
 
 */
