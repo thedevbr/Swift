@@ -28,7 +28,7 @@ while run{
   if (option! == "1"){
     var start = true
     while start{
-      print("Enter 1 for add pokemon or 2 for get out: ")
+      print("Enter 1 to add a pokemon or 2 to go back to the home menu.")
       let addPokemon = readLine()
         if(addPokemon! == "1"){ 
           print("Enter the Pokemon name: ")
