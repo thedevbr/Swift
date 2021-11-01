@@ -26,11 +26,20 @@ while run{
   //I use the readLine function to capture user data
   let option = readLine()
   if (option! == "1"){
-    print("Enter the Pokemon name: ")
-    //Here we add what the pokemon name is to our myPokemons list.
-    let namePokemon = readLine()
-    myPokemons.append(namePokemon!)
-    print("New Pokemon added: \(namePokemon!)")
+    var start = true
+    while start{
+      print("Enter 1 for add pokemon or 2 for get out: ")
+      let addPokemon = readLine()
+        if(addPokemon! == "1"){ 
+          print("Enter the Pokemon name: ")
+          //Here we add what the pokemon name is to our myPokemons list.
+          let namePokemon = readLine()
+          myPokemons.append(namePokemon!)
+          print("New Pokemon added: \(namePokemon!)")
+      }else{
+        start = false
+      }
+    }
   }else if (option! == "2"){
     /*
     In option 2, if the list is empty, a message is shown on the screen, 
