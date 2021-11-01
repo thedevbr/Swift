@@ -1,5 +1,5 @@
 /*
-Author: Lucas Matthew.
+Author: Lucas Mateus.
 project name : MyPokemons.
 
 Program created in Swift, with the intention of learning in the programming language.
