@@ -123,8 +123,10 @@ repeat{
   let refazer = readLine()
   if(refazer!.uppercased() == "S"){
     refazerQuiz = true
+    resultQuiz.removeAll()
   }else{
     print("Quiz encerrado!")
   }
 }while refazerQuiz 
+
 
