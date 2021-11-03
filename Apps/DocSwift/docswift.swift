@@ -200,5 +200,44 @@
 
 // Literais Numéricos
 /*
+  Literais inteiros podem ser escritos como:
+  
+  *Um número decimal, sem prefixo.
+  *Um número binário, com um prefixo '0b'.
+  *Um número octal, com um prefixo '0o'.
+  *Um número hexadecimal, com um prefixo '0x'.  
 
+  Ex:
+  Todos esses literais inteiros tem um valor decimal de 17.
+
+  let decimalInterger = 17
+  let binaryInterger = 0b10001
+  let octalInterger = 0o21
+  let hexadecimalInterger = 0x11
+
+  todos retornam '17'
+
+  Literais de ponto flutuante podem ser decimais (sem prefixo) ou hexadecimal(com prefixo). Eles devem sempre ter um número(ou número hexadecimal) em ambos os lados da vírgula decimal. Os floats decimais também podem ter um expoente opcional, indicado por uma letra 'e' maiúscula ou minúscula; floats hexadecimais devem ter um expoente indicado por uma letra 'p' maiúscula ou minúscula
+
+  Ex para decimais:
+  1.25e2 significa 1,25 x 10²
+  2.34e-2 significa 2,34 x 10-²
+
+  Ex para hexadecimais:
+  0xFp2 significa 15 x 2²
+  0xFp-2 significa 15 x 2-²
+
+
+  Todos esses literais de ponto flutuante tem um valor decimal de 12.1875:
+  let decimalDouble = 12.1875
+  let exponentDouble = 1.21875e1
+  let hexadecimalDouble = 0xC.3p0
+
+  Literais numéricos podem conter formatação extra para torná-los mais fáceis de ler. Tanto inteiros quanto flutuantes podem ser preenchidos com zeros extras e podem conter sublinhados para ajudar na legibilidade. Nenhum tipo de formatação afeta o valor subjacente literal:
+
+  Ex:
+  let paddedDouble = 000123.456
+  let oneMillion = 1_000_000
+  let justOverOneMillion = 1_000_000.000_000_1
+  
 */

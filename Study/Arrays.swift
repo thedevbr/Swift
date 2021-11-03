@@ -57,10 +57,22 @@
   userNames.append("Mateus")
 
   obs: sempre é adicionado ao final do array.
+
+  Para inserir um item no array em um índice específico usamos o método 
+  .insert(_:at:), onde o '_' é o valor do intem e o at: é o índice.
+  Ex:
+  myArray.insert("Novo registro",at:2).
+  é inserido o novo registro no índice 2 do array.
+
+
+
 */
 
 // REMOVENDO TODOS OS ELEMENTOS EM UM ARRAY
 /*
+  Para remover um item no final do array usamos o método removeLast()
+  Ex:
+  myArray.removeLast() ==> retorna o item removido.
   Podemos remover todos os elementos do aray usando:
   removeAll()
   Ex:
@@ -85,3 +97,26 @@
   =====> retorna os elementos do array, caso seja uma lista vazia não retorna nada.
          Devemos sempre usar o first por meio de condições, pois sem essa verificação irá retornar um opcional ==> (nil).
 */
+// ITERANDO SOBRE UM ARRAY
+/*
+  usamos o laço de repetição para iterar sobre um array.
+  Ex:
+  var myArray = ["DARIUS","DRAVER","LUCAS","JACK"]
+  for item in myArray{
+    print(item)
+  }
+  //retorna os elementos do array.
+  
+  Caso precisarmos do índice de cada item, bem como seu valor, usamos o método
+  enumerated() para iterar no array. Para cada item o método enumerated() retorna uma tupla composta de um inteiro e o item. Podemos decompor a tupla em constantes ou variáveis temporárias como parte da iteração.
+
+  Ex enumerated():
+  var myArray = ["DARIUS","DRAVER","LUCAS","JACK"]
+  for (index, values) in myArray.enumerated(){
+    print("Item \(index + 1) : \(values)")
+  }
+
+*/
+
+
+

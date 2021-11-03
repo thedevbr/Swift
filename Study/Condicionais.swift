@@ -42,3 +42,8 @@ if op == "+" {
 }else{
   print("Nada foi atribuído! ")
 }
+
+// SWITCH CASE
+/*
+  
+*/
