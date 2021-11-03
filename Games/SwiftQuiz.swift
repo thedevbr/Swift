@@ -55,11 +55,11 @@ repeat{
     }
     //==============================================================
     print("Como fazemos para converter o tipo da variável 'valor'")
-    print("var valor : String = 2, para um valor Inteiro?")
-    print("1) var novoTipo : Int = valor ")
-    print("2) let novoTipo = Int:valor")
-    print("3) let novoTipo = Int(valor)")
-    print("4) valor : Int = valor")
+    print("var valor : Int = 2, para o tipo String?")
+    print("1) var novoTipo : String = valor ")
+    print("2) let novoTipo = String:valor")
+    print("3) let novoTipo = String(valor)")
+    print("4) valor : String = valor")
     print("-------------------------------------------------------")
     let response3 = readLine()
     print("-------------------------------------------------------")
