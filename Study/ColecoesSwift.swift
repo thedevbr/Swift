@@ -43,3 +43,29 @@
 
 */
 
+// var myStore  = [
+//   "zerokms":[
+//     "ford":["fusion","cobalt","ranger"]
+//   ],
+//   "seminovos":[
+//     "vw":["fusca","gol","passat"]
+//   ]
+// ]
+
+// print(myStore["seminovos"]!)
+
+/* 
+Uso o for-in para iterar sobre o dicionario myStore.
+então utilizo colchetes para chamar a chave em que quero percorrer,
+dessa forma myStore["zerokms"], porém, dessa forma tenho como retorno 
+um opcional, então uso o '!' para descompactar o opcional e me retornar 
+os valores dentro de um array, no caso o 'cars' agora é um array 
+contendo os values do dicionario 'zerokms'. então posso printar usando
+[] para selecionar o elemento específico.
+*/
+
+// for cars in myStore["zerokms"]!.values{
+//   print(cars[0])
+// }
+
+
